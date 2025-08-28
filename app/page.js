@@ -29,7 +29,7 @@ export default function Home() {
           <div className="formTitle">
             <h1>AURALIS<sup>®</sup></h1>
           </div>
-          <h2 className="title_note">Sign-in now to view documents</h2>
+          <h2 className="title_note">Sign-in to view documents</h2>
           <div className="form">
             <form className="firstSection login" onSubmit={(e) => {handleSubmit(e)}}>
               <div className="inputCntn userID">
