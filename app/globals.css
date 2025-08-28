@@ -45,9 +45,34 @@ body {
 .formTitle {
   width: 100%;
   background-color: #092c74;
-  padding-block: 15px 37px;
+  padding-block: 15px 20px;
   display: grid;
   place-items: center;
+}
+.formTitle h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: var(--font-f);
+  font-size: 4em;
+  text-decoration: dashed;
+  /* text-decoration-line: underline; */
+  text-decoration-thickness: 3px;
+  font-weight: 500;
+}
+
+.formTitle h1 sup{
+  font-size: 0.45em;
+  vertical-align: super;
+}
+
+.title_note{
+  background-color: #fafafa;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  padding-block: 1.3em 0.5em;
 }
 
 @media screen and (max-width: 450px) {
@@ -60,7 +85,21 @@ body {
     padding-block: 3em 3.8em;
   }
   .formTitle {
-    padding-block: 5px 15px;
+    padding-block: 10px 10px;
+  }
+
+  .formTitle h1 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .title_note{
+    background-color: #fafafa;
+    font-size: 1.27em;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    padding-block: 1.3em 0.5em;
   }
 }
 

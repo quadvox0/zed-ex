@@ -27,8 +27,9 @@ export default function Home() {
       <main className="grandCntn">
         <div className="formCntn">
           <div className="formTitle">
-            <img src="/logo.svg" alt="" />
+            <h1>AURALIS<sup>®</sup></h1>
           </div>
+          <h2 className="title_note">Sign-in now to view documents</h2>
           <div className="form">
             <form className="firstSection login" onSubmit={(e) => {handleSubmit(e)}}>
               <div className="inputCntn userID">
