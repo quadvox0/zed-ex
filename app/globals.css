@@ -24,20 +24,48 @@ body {
 .grandCntn {
   width: 100%;
   min-height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  gap: 40px;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  padding-inline: 3%;
-  padding-block: 7em 3em;
 }
-.formCntn {
-  max-width: 638px;
-  width: 100%;
+
+.sideShow {
+  background-color: #005a60;
+  height: 100vh;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  /* gap: 10px; */
+  justify-content: center;
+}
+
+.sideShow img{
+  width: 260px;
+  object-fit: contain;
+}
+
+.sideShow h1{
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.sideShow span{
+  color: #78ee8c;
+  font-weight: 700;
+}
+
+
+.formCntn {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   border-radius: 5px;
   overflow: hidden;
@@ -61,6 +89,10 @@ body {
   font-weight: 500;
 }
 
+#company{
+  display: none;
+}
+
 .formTitle h1 sup{
   font-size: 0.45em;
   vertical-align: super;
@@ -68,9 +100,9 @@ body {
 
 .title_note{
   background-color: #fafafa;
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   padding-block: 1.3em 0.5em;
 }
@@ -244,7 +276,7 @@ input[type="number"] {
   appearance: none;
 }
 .rememberMe:has(input[type="checkbox"]:checked) polyline {
-  stroke: #092c74;
+  stroke: #005a60;
 }
 
 .rememberMe svg {
@@ -271,7 +303,7 @@ input[type="number"] {
 .LoginBtn {
   width: 100%;
   height: 45px;
-  background-color: #092c74;
+  background-color: #005a60;
   color: #fff;
   border: none;
   border-radius: 3px;
