@@ -20,6 +20,7 @@ body {
   background-image: linear-gradient(to bottom, #d1d2d3 60%, #e0e0e0 60%);
   background-size: 100% 7px;
   font-family: var(--font-o);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .grandCntn {
   width: 100%;
@@ -100,7 +101,7 @@ body {
 
 .title_note{
   background-color: #fafafa;
-  font-size: 1.6em;
+  font-size: 1.45em;
   text-align: center;
   font-weight: 600;
   color: black;
@@ -311,6 +312,8 @@ input[type="number"] {
   font-weight: 600;
   margin-top: 22px;
   font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+
 
   cursor: pointer;
   pointer-events: all;
