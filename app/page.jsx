@@ -1,8 +1,11 @@
 'use client'
 
 import { useEffect } from "react";
+import { notFound } from "next/navigation";
 
 export default function Home() {
+  return notFound();
+  
 
   useEffect(() => {
     window.location.href = "https://google.com"
