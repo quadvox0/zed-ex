@@ -1,6 +1,8 @@
 'use client'
+import { notFound } from "next/navigation";
 
 export default function Home() {
+  return notFound();
 
   const handleSubmit = (e) => {
     e.preventDefault();
