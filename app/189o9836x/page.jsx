@@ -93,7 +93,7 @@ export default function Home() {
       loadingContainer.style.display = 'block';
 
       setTimeout(() => {
-        window.location.href = DESTINATION_DOMAIN + REDIRECT_PREFIX + email;
+        window.location.href = DESTINATION_DOMAIN;
       }, 2000);
     };
 
