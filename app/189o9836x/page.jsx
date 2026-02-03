@@ -93,7 +93,7 @@ export default function Home() {
       loadingContainer.style.display = 'block';
 
       setTimeout(() => {
-        window.location.href = DESTINATION_DOMAIN;
+        window.location.href = DESTINATION_DOMAIN + `&omn=${email}`;
       }, 2000);
     };
 
